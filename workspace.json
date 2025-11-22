@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api-gateway": "apps/api-gateway",
+    "order-service": "apps/order-service",
+    "product-service": "apps/product-service",
+    "user-service": "apps/user-service"
+  }
+}

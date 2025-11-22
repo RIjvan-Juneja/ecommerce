@@ -7,7 +7,10 @@
   "dependencies": {
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
+    "@nestjs/microservices": "^11.1.9",
     "@nestjs/platform-express": "^11.0.0",
+    "amqp-connection-manager": "^5.0.0",
+    "amqplib": "^0.10.9",
     "axios": "^1.6.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0"
@@ -19,7 +22,7 @@
     "@nx/eslint": "22.1.1",
     "@nx/eslint-plugin": "22.1.1",
     "@nx/js": "22.1.1",
-    "@nx/nest": "22.1.1",
+    "@nx/nest": "^22.1.1",
     "@nx/node": "22.1.1",
     "@nx/web": "22.1.1",
     "@nx/webpack": "22.1.1",
