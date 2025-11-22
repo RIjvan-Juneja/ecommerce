@@ -1,12 +1,15 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller } from '@nestjs/common';
+import { MessagePattern } from '@nestjs/microservices';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
-  @Get()
-  getData() {
-    return this.appService.getData();
+  @MessagePattern('get_product_by_id')
+  getProductById(productId: string) {
+    return {
+      id: productId,
+      name: 'Test Product',
+      price: 100,
+      stock: 20,
+    };
   }
 }
